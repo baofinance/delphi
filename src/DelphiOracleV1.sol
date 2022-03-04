@@ -79,11 +79,11 @@ contract DelphiOracleV1 is Initializable {
         answer = getLatestValue();
     }
 
-    function getAggregators()  external view returns (AggregatorV3Interface[] memory _aggregators) {
-        return _aggregators;
+    function getAggregators() external view returns (AggregatorV3Interface[] memory) {
+        return aggregators;
     }
 
-    function getNodes()  external view returns (Equation.Node[] memory _nodes) {
-        return _nodes;
+    function getNodes() external view returns (Equation.Node[] memory) {
+        return nodes;
     }
 }
